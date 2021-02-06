@@ -39,12 +39,44 @@
       footer a {
         color: rgb(239, 235, 233);
       }
+      footer a:hover {
+        color:rgba(239, 235, 233, 0.5)
+      }
       h1 {
         text-align: center;
         font-size: 50px;
       }
+      h2 {
+        text-align: center;
+        font-size: 20px;
+        color:rgb(93, 64, 55);
+        padding-bottom: 20px;
+        font-weight: 500;
+        font-style: italic;
+      }
       h4 {
         padding-bottom: 10px;
+      }
+      a {
+        color: rgb(33, 21, 18);
+        text-decoration: none;
+        transition: color 650ms ease-in-out;
+      }
+      a:hover {
+        color: rgb(93, 64, 55);
+      }
+      ul,
+      li {
+        list-style: none;
+        display: inline-block;
+        vertical-align: top;
+      }
+      nav li a {
+        color:rgb(225,197,179);
+        transition: color 450ms ease-out;
+      }
+      nav li a:hover {
+        color:rgba(239, 235, 233, 0.9);
       }
       button {
         background: rgb(93, 64, 55);
@@ -57,27 +89,12 @@
         font-family: "Work Sans", sans-serif;
         display: block;
         margin: 50px auto;
-      }
-      a {
-        color: rgb(33, 21, 18);
-        text-decoration: none;
-      }
-      a:hover {
-        color: rgb(93, 64, 55);
-      }
-      ul,
-      li {
-        list-style: none;
-        display: inline-block;
-        vertical-align: top;
-      }
-      nav li a:hover {
-        color: rgb(239, 235, 233);
+        transition: background-color 450ms ease-in-out;
       }
       button:hover {
         background-color: rgb(227, 212, 206);
         color: rgb(93, 64, 55);
-        border: 1px solid rgb(33, 21, 18);
+        border: 1px solid transparent;
         cursor: pointer;
       }
       iframe {
@@ -86,7 +103,13 @@
         width: 100%;
         max-width: 560px;
       }
-
+      hr {
+        border: 1px solid rgba(93, 64, 55, 0.5) ;
+        margin: 0px auto 30px auto;
+        width: 80%;
+        max-width: 500px;
+        display: block;
+      }
       /* Classes (wrappers and their contents) */
 
       .to-top {
@@ -125,7 +148,7 @@
 
       /* HOW SECTION */
       .how-wrapper {
-        background: rgb(227, 212, 206);
+        background-image:linear-gradient(to bottom, rgb(227, 212, 206), rgb(93, 64, 55, 0.7));
         padding: 30px 50px 20px 50px;
       }
       .how-header {
@@ -157,7 +180,9 @@
         vertical-align: top;
         min-height: 417px;
       }
-
+p.step {
+  line-height: 1.4;
+}
       /* LEARN SECTION */
       .learn-wrapper {
         padding: 50px;
@@ -166,13 +191,6 @@
         clear: both;
       }
       /* CLASSES IN FOOTER */
-      h4.to-top {
-        background-color: rgba(160, 138, 131, 0.1);
-        color: rgb(239, 235, 233);
-      }
-      .to-top:hover {
-        background-color: rgba(160, 138, 131, 0.025);
-      }
       .coder-name {
         font-size: 18px;
         font-family: "Satisfy", cursive;
@@ -182,6 +200,7 @@
 
       /* HEADER AND NAV */
       nav {
+        margin-top: 10px;
         float: right;
       }
       nav ul {
@@ -316,8 +335,9 @@
           <h1 class="about-header" id="about" style="padding-bottom: 20px">
             About Pu'erh
           </h1>
-          <p class="about-p">
-            "Pu-erh tea is a post-oxidized tea that is mainly sourced from the
+          <hr>
+          <p class="about-p" style="line-height: 1.3;">
+            "<strong style="font-size: 18px;font-style: italic;">Pu-erh tea</strong> is a post-oxidized tea that is mainly sourced from the
             Yunnan province of China. The tea is commonly aged for several years
             to develop complex flavor characteristics. Pu-erh tea is a true tea
             made from the large leaves of the Camellia sinensis tea plant.
@@ -333,14 +353,16 @@
             process of pu-erh tea is known as shai qing mao cha. Ripe pu-erh
             leaves are made from black tea leaves..."
             <br /><br />
+            <strong>
             <em>
               -
               <a
                 href="https://senchateabar.com/blogs/blog/how-to-make-pu-erh-tea"
                 style="font-size: 18px"
-                >Read more at Sencha Tea Bar
+                ><span>Read more at Sencha Tea Bar</span>
               </a>
             </em>
+            </strong>
           </p>
           <img
             src="https://www.banateacompany.com/media/global/havesting-pu-erh-tea1.jpg"
@@ -352,6 +374,8 @@
         <!--START HOW SECTION-->
         <section class="how-wrapper">
           <h1 class="how-header" id="how">How It's Made</h1>
+          <hr>
+          <h2>Discover the careful process followed to make this popular drink</h2>
           <iframe
             class="howVideo"
             height="315"
@@ -362,6 +386,7 @@
           ></iframe>
           <!--START HOW/STEPS WRAPPER-->
           <h1 class="step-header">Steep Tips</h1>
+          <hr>
           <ul class="step-wrapper">
             <li class="step">
               <h4>Step 1</h4>
@@ -467,7 +492,7 @@
             </li>
           </ul>
           <!--END HOW/STEPS WRAPPER-->
-          <h3 class="to-top"><a href="#top">Back to Top</a></h3>
+          <h4 class="to-top"><a href="#top">Back to Top</a></h4>
         </section>
         <!--END HOW SECTION-->
         <!--START LEARN SECTION-->
@@ -515,7 +540,7 @@
             <h4
               class="to-top"
               style="
-                background-color: rgba(171, 114, 66, 0.1);
+                background-color:rgba(33, 21, 18, 0.6);
                 border-radius: 4px;
                 width: 100%;
                 margin: 10px auto;
