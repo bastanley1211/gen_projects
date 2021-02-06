@@ -40,7 +40,7 @@
         color: rgb(239, 235, 233);
       }
       footer a:hover {
-        color:rgba(239, 235, 233, 0.5)
+        color: rgba(239, 235, 233, 0.5);
       }
       h1 {
         text-align: center;
@@ -49,7 +49,7 @@
       h2 {
         text-align: center;
         font-size: 20px;
-        color:rgb(93, 64, 55);
+        color: rgb(93, 64, 55);
         padding-bottom: 20px;
         font-weight: 500;
         font-style: italic;
@@ -72,11 +72,11 @@
         vertical-align: top;
       }
       nav li a {
-        color:rgb(225,197,179);
+        color: rgb(225, 197, 179);
         transition: color 450ms ease-out;
       }
       nav li a:hover {
-        color:rgba(239, 235, 233, 0.9);
+        color: rgba(239, 235, 233, 0.9);
       }
       button {
         background: rgb(93, 64, 55);
@@ -104,11 +104,17 @@
         max-width: 560px;
       }
       hr {
-        border: 1px solid rgba(93, 64, 55, 0.5) ;
+        border: 1px solid rgba(93, 64, 55, 0.5);
         margin: 0px auto 30px auto;
         width: 80%;
         max-width: 500px;
         display: block;
+      }
+      img.about-wrapper {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 250px;
       }
       /* Classes (wrappers and their contents) */
 
@@ -141,14 +147,20 @@
         width: 100%;
         max-width: 700px;
       }
-      .about-image {
+      img.about-image {
         float: right;
         max-height: 150px;
+        max-width: 400px;
+        width: 100%;
       }
 
       /* HOW SECTION */
       .how-wrapper {
-        background-image:linear-gradient(to bottom, rgb(227, 212, 206), rgb(93, 64, 55, 0.7));
+        background-image: linear-gradient(
+          to bottom,
+          rgb(227, 212, 206),
+          rgb(93, 64, 55, 0.7)
+        );
         padding: 30px 50px 20px 50px;
       }
       .how-header {
@@ -180,9 +192,10 @@
         vertical-align: top;
         min-height: 417px;
       }
-p.step {
-  line-height: 1.4;
-}
+      p.step {
+        line-height: 1.4;
+      }
+
       /* LEARN SECTION */
       .learn-wrapper {
         padding: 50px;
@@ -280,6 +293,7 @@ p.step {
           margin: 0 auto;
         }
       }
+
       /*LARGER MOBILE PHONES*/
       @media only screen and (max-width: 802px) {
         /* ALT LEARN SECTION HEADING FOR LARGER MOBILE */
@@ -301,59 +315,62 @@ p.step {
       }
     </style>
   </head>
-    <div><a href="#top"></a></div>
-    <body>
-      <header>
-        <div class="top-nav">
-          <!-- HEADER IMG, SITE TITLE, FLOAT LEFT ON DESKTOP, CENTERED ON MOBILE -->
-          <a href="#top"><h1 class="header" id="top">Explore Pu'erh</h1></a>
-          <!--END HEADER-->
+  <div><a href="#top"></a></div>
+  <body>
+    <header>
+      <div class="top-nav">
+        <!-- HEADER IMG, SITE TITLE, FLOAT LEFT ON DESKTOP, CENTERED ON MOBILE -->
+        <a href="#top"><h1 class="header" id="top">Explore Pu'erh</h1></a>
+        <!--END HEADER-->
 
-          <!--START TOP NAV BAR, RESPONSIVE-->
-          <nav class="main-nav">
-            <ul>
-              <li><a href="#about">About Pu'erh</a></li>
-              <li><a href="#how">How It's Made</a></li>
-              <li><a href="#learn">Learn More</a></li>
-            </ul>
-          </nav>
-          <!--END TOP NAV BAR-->
-        </div>
-      </header>
-      <!--START MAIN SITE CONTENT-->
-      <main>
-        <!--START TOP BANNER-->
-        <section class="top-banner-wrapper">
-          <img
-            src="https://post.healthline.com/wp-content/uploads/2020/04/6120-Pu-Erh_Tea-1200x628-facebook-1200x628.jpg"
-            class="banner-img"
-          />
-        </section>
-        <!--END TOP BANNER-->
-        <!--START ABOUT SECTION-->
-        <section class="about-wrapper">
-          <h1 class="about-header" id="about" style="padding-bottom: 20px">
-            About Pu'erh
-          </h1>
-          <hr>
-          <p class="about-p" style="line-height: 1.3;">
-            "<strong style="font-size: 18px;font-style: italic;">Pu-erh tea</strong> is a post-oxidized tea that is mainly sourced from the
-            Yunnan province of China. The tea is commonly aged for several years
-            to develop complex flavor characteristics. Pu-erh tea is a true tea
-            made from the large leaves of the Camellia sinensis tea plant.
-            Pu-erh tea is most commonly made from the Assamica variety of the
-            tea plant. The leaves are harvested and then separated depending on
-            which type of pu-erh tea they will become. There are two types of
-            pu-erh teas: raw pu-erh (Sheng) and ripe pu-erh (Shou). Raw pu-erh
-            is made from green tea leaves that are harvested, roasted,
-            sun-dried, and steamed for compression into cakes and balls. The tea
-            cakes are then aged to further develop flavor. Pu-erh tea is unique
-            from oolong tea and black tea as the oxidation occurs because of
-            bacteria rather than due to enzymes in the leaves. The production
-            process of pu-erh tea is known as shai qing mao cha. Ripe pu-erh
-            leaves are made from black tea leaves..."
-            <br /><br />
-            <strong>
+        <!--START TOP NAV BAR, RESPONSIVE-->
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#about">About Pu'erh</a></li>
+            <li><a href="#how">How It's Made</a></li>
+            <li><a href="#learn">Learn More</a></li>
+          </ul>
+        </nav>
+        <!--END TOP NAV BAR-->
+      </div>
+    </header>
+    <!--START MAIN SITE CONTENT-->
+    <main>
+      <!--START TOP BANNER-->
+      <section class="top-banner-wrapper">
+        <img
+          src="https://post.healthline.com/wp-content/uploads/2020/04/6120-Pu-Erh_Tea-1200x628-facebook-1200x628.jpg"
+          class="banner-img"
+        />
+      </section>
+      <!--END TOP BANNER-->
+      <!--START ABOUT SECTION-->
+      <section class="about-wrapper">
+        <h1 class="about-header" id="about" style="padding-bottom: 20px">
+          About Pu'erh
+        </h1>
+        <hr />
+        <p class="about-p" style="line-height: 1.3">
+          "<strong style="font-size: 18px; font-style: italic"
+            >Pu-erh tea</strong
+          >
+          is a post-oxidized tea that is mainly sourced from the Yunnan province
+          of China. The tea is commonly aged for several years to develop
+          complex flavor characteristics. Pu-erh tea is a true tea made from the
+          large leaves of the Camellia sinensis tea plant. Pu-erh tea is most
+          commonly made from the Assamica variety of the tea plant. The leaves
+          are harvested and then separated depending on which type of pu-erh tea
+          they will become. There are two types of pu-erh teas: raw pu-erh
+          (Sheng) and ripe pu-erh (Shou). Raw pu-erh is made from green tea
+          leaves that are harvested, roasted, sun-dried, and steamed for
+          compression into cakes and balls. The tea cakes are then aged to
+          further develop flavor. Pu-erh tea is unique from oolong tea and black
+          tea as the oxidation occurs because of bacteria rather than due to
+          enzymes in the leaves. The production process of pu-erh tea is known
+          as shai qing mao cha. Ripe pu-erh leaves are made from black tea
+          leaves..."
+          <br /><br />
+          <strong>
             <em>
               -
               <a
@@ -362,218 +379,225 @@ p.step {
                 ><span>Read more at Sencha Tea Bar</span>
               </a>
             </em>
-            </strong>
-          </p>
-          <img
-            src="https://www.banateacompany.com/media/global/havesting-pu-erh-tea1.jpg"
-            class="about-img"
-          />
-          <h4 class="to-top"><a href="#top">Back to Top</a></h4>
-        </section>
-        <!--END ABOUT SECTION-->
-        <!--START HOW SECTION-->
-        <section class="how-wrapper">
-          <h1 class="how-header" id="how">How It's Made</h1>
-          <hr>
-          <h2>Discover the careful process followed to make this popular drink</h2>
-          <iframe
-            class="howVideo"
-            height="315"
-            src="https://www.youtube.com/embed/QE-aXKxPagY"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <!--START HOW/STEPS WRAPPER-->
-          <h1 class="step-header">Steep Tips</h1>
-          <hr>
-          <ul class="step-wrapper">
-            <li class="step">
-              <h4>Step 1</h4>
-              <p>
-                Take either your tuocha, (smaller premade cylinder for a few
-                servings), desired about off of your Pu'erh brick, or, for
-                leaves, about 2 tsp per cup for a strong steep; 1 tsp for a
-                light steep. One Tuocha should be able to be resteeped 4-5
-                times.
-              </p>
-              <br /><br /><br /><br /><br /><br />
-              <div class="step-img">
-                <img
-                  src="https://image.flaticon.com/icons/png/512/84/84464.png"
-                  style="
-                    display: block;
-                    max-width: 100px;
-                    width: 100%;
-                    margin: 0 auto;
-                  "
-                />
-              </div>
-            </li>
-            <li class="step">
-              <h4>Step 2</h4>
-              <p>
-                Heat some water (purified for best results) to about 200℉. Take
-                your mug and pour some of the heated water into it to prep the
-                cup for optimal steeping. Reheat the water again in case the
-                temperature fell.
-              </p>
-              <br /><br /><br /><br /><br /><br />
-              <div class="step-img">
-                <img
-                  src="https://webstockreview.net/images/hot-clipart-teapot-10.png"
-                  style="
-                    display: block;
-                    max-width: 100px;
-                    width: 100%;
-                    margin: 0 auto;
-                  "
-                />
-              </div>
-            </li>
-            <li class="step">
-              <h4>Step 3</h4>
-              <p>
-                Finally you can start steeping the tea!<br />
-                Take your tea, either place it in a small tea strainer for
-                individual or smaller servings (i.e.
-                <a
-                  href="https://www.epicurious.com/expert-advice/the-best-tea-steeper-according-to-a-serious-tea-drinker-article"
-                >
-                  this, </a
-                >,
-                <a
-                  href="https://www.rustydogcoffee.com/products/stainless-steel-mesh-tea-ball-infuser?variant=31382822584418&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic"
-                  >this,
-                </a>
-                or
-                <a
-                  href="https://www.etsy.com/listing/806443660/disposable-unbleached-tea-filter-bags?gpla=1&gao=1&"
-                  >this</a
-                >);<br />
-                or, put it into a steeping pot that has a strainer on top
-                already. Let it steep for at least 5 minutes, but not more than
-                10 minutes. It really depends on your tastes, and if you steep
-                it longer the first time, your next steep will be weaker.
-              </p>
-              <div class="step-img">
-                <img
-                  src="https://www.schooloftea.org/images/module/pot.png"
-                  style="
-                    display: block;
-                    max-width: 100px;
-                    width: 100%;
-                    margin: 0 auto;
-                  "
-                />
-              </div>
-            </li>
-            <li class="step">
-              <h4>Step 4</h4>
-              <p>
-                If it's in a mug infuser, or detachable infuser, take out the
-                tea infuser and place it on a dish to the side. If it is in a
-                pot with a fixed strainer, either remove the leaves immediately
-                to save for another steep, or pour out all of the contents
-                directly.
-              </p>
-              <br /><br /><br /><br /><br /><br />
-              <div class="step-img">
-                <img
-                  src="https://i.imgur.com/K0Ur7K2.png"
-                  style="
-                    display: block;
-                    max-width: 100px;
-                    width: 100%;
-                    margin: 0 auto;
-                  "
-                />
-              </div>
-            </li>
-          </ul>
-          <!--END HOW/STEPS WRAPPER-->
-          <h4 class="to-top"><a href="#top">Back to Top</a></h4>
-        </section>
-        <!--END HOW SECTION-->
-        <!--START LEARN SECTION-->
-        <section class="learn-wrapper">
-          <h1 class="learn-header" id="learn">Want to know more?</h1>
-          <!--START JAVASCRIPT BUTTON-->
-          <button class="learnMore">Learn More</button>
-          <!--END JAVASCRIPT BUTTON-->
-        </section>
-        <!--END LEARN SECTION-->
-        <!--START FOOTER-->
-        <footer>
-          <h4>
-            Designed and coded by:
-            <p class="coder-name">Bethany Stanley</p>
+          </strong>
+        </p>
+        <img
+          src="https://www.banateacompany.com/media/global/havesting-pu-erh-tea1.jpg"
+          class="about-img"
+          style="
+            display: inline-block;
+            margin: 0 auto;
+            width: 100%;
+            min-width: 250px;
+            max-width: 400px;
+          "
+        />
+        <h4 class="to-top"><a href="#top">Back to Top</a></h4>
+      </section>
+      <!--END ABOUT SECTION-->
+      <!--START HOW SECTION-->
+      <section class="how-wrapper">
+        <h1 class="how-header" id="how">How It's Made</h1>
+        <hr />
+        <h2>
+          Discover the careful process followed to make this popular drink
+        </h2>
+        <iframe
+          class="howVideo"
+          height="315"
+          src="https://www.youtube.com/embed/QE-aXKxPagY"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <!--START HOW/STEPS WRAPPER-->
+        <h1 class="step-header">Steep Tips</h1>
+        <hr />
+        <ul class="step-wrapper">
+          <li class="step">
+            <h4>Step 1</h4>
+            <p>
+              Take either your tuocha, (smaller premade cylinder for a few
+              servings), desired about off of your Pu'erh brick, or, for leaves,
+              about 2 tsp per cup for a strong steep; 1 tsp for a light steep.
+              One Tuocha should be able to be resteeped 4-5 times.
+            </p>
+            <br /><br /><br /><br /><br /><br />
+            <div class="step-img">
+              <img
+                src="https://image.flaticon.com/icons/png/512/84/84464.png"
+                style="
+                  display: block;
+                  max-width: 100px;
+                  width: 100%;
+                  margin: 0 auto;
+                "
+              />
+            </div>
+          </li>
+          <li class="step">
+            <h4>Step 2</h4>
+            <p>
+              Heat some water (purified for best results) to about 200℉. Take
+              your mug and pour some of the heated water into it to prep the cup
+              for optimal steeping. Reheat the water again in case the
+              temperature fell.
+            </p>
+            <br /><br /><br /><br /><br /><br />
+            <div class="step-img">
+              <img
+                src="https://webstockreview.net/images/hot-clipart-teapot-10.png"
+                style="
+                  display: block;
+                  max-width: 100px;
+                  width: 100%;
+                  margin: 0 auto;
+                "
+              />
+            </div>
+          </li>
+          <li class="step">
+            <h4>Step 3</h4>
+            <p>
+              Finally you can start steeping the tea!<br />
+              Take your tea, either place it in a small tea strainer for
+              individual or smaller servings (i.e.
+              <a
+                href="https://www.epicurious.com/expert-advice/the-best-tea-steeper-according-to-a-serious-tea-drinker-article"
+              >
+                this, </a
+              >,
+              <a
+                href="https://www.rustydogcoffee.com/products/stainless-steel-mesh-tea-ball-infuser?variant=31382822584418&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic"
+                >this,
+              </a>
+              or
+              <a
+                href="https://www.etsy.com/listing/806443660/disposable-unbleached-tea-filter-bags?gpla=1&gao=1&"
+                >this</a
+              >);<br />
+              or, put it into a steeping pot that has a strainer on top already.
+              Let it steep for at least 5 minutes, but not more than 10 minutes.
+              It really depends on your tastes, and if you steep it longer the
+              first time, your next steep will be weaker.
+            </p>
+            <div class="step-img">
+              <img
+                src="https://www.schooloftea.org/images/module/pot.png"
+                style="
+                  display: block;
+                  max-width: 100px;
+                  width: 100%;
+                  margin: 0 auto;
+                "
+              />
+            </div>
+          </li>
+          <li class="step">
+            <h4>Step 4</h4>
+            <p>
+              If it's in a mug infuser, or detachable infuser, take out the tea
+              infuser and place it on a dish to the side. If it is in a pot with
+              a fixed strainer, either remove the leaves immediately to save for
+              another steep, or pour out all of the contents directly.
+            </p>
+            <br /><br /><br /><br /><br /><br />
+            <div class="step-img">
+              <img
+                src="https://i.imgur.com/K0Ur7K2.png"
+                style="
+                  display: block;
+                  max-width: 100px;
+                  width: 100%;
+                  margin: 0 auto;
+                "
+              />
+            </div>
+          </li>
+        </ul>
+        <!--END HOW/STEPS WRAPPER-->
+        <h4 class="to-top"><a href="#top">Back to Top</a></h4>
+      </section>
+      <!--END HOW SECTION-->
+      <!--START LEARN SECTION-->
+      <section class="learn-wrapper">
+        <h1 class="learn-header" id="learn">Want to know more?</h1>
+        <!--START JAVASCRIPT BUTTON-->
+        <button class="learnMore">Learn More</button>
+        <!--END JAVASCRIPT BUTTON-->
+      </section>
+      <!--END LEARN SECTION-->
+      <!--START FOOTER-->
+      <footer>
+        <h4>
+          Designed and coded by:
+          <p class="coder-name">Bethany Stanley</p>
+        </h4>
+        <div class="socialLinks">
+          <a href="https://www.instagram.com/bastanley1211"
+            ><img
+              src="https://icons.iconarchive.com/icons/icons8/windows-8/64/Social-Networks-Instagram-icon.png"
+              style="max-width: 25px"
+          /></a>
+          <a href="https://www.facebook.com/mrsbethanystanley"
+            ><img
+              src="https://iconarchive.com/download/i91646/icons8/windows-8/Social-Networks-Facebook.ico"
+              style="max-width: 25px"
+          /></a>
+          <a href="https://soundcloud.com/bethanyannemusic"
+            ><img
+              src="https://icons.iconarchive.com/icons/icons8/windows-8/64/Logos-Soundcloud-icon.png"
+              style="max-width: 25px; max-height: 25px"
+          /></a>
+          <a href="https://github.com/bastanley1211"
+            ><img
+              src="https://icons.iconarchive.com/icons/icons8/windows-8/64/Programming-Github-icon.png"
+              style="max-width: 25px"
+          /></a>
+          <a href="https://www.reddit.com/user/covertnerd93"
+            ><img
+              src="https://icons.iconarchive.com/icons/mysitemyway/blue-jeans-social-media/48/reddit-square-icon.png"
+              style="max-width: 30px"
+          /></a>
+        </div>
+        <a href="#top">
+          <h4
+            class="to-top"
+            style="
+              background-color: rgba(33, 21, 18, 0.6);
+              border-radius: 4px;
+              width: 100%;
+              margin: 10px auto;
+            "
+          >
+            Back to Top
           </h4>
-          <div class="socialLinks">
-            <a href="https://www.instagram.com/bastanley1211"
-              ><img
-                src="https://icons.iconarchive.com/icons/icons8/windows-8/64/Social-Networks-Instagram-icon.png"
-                style="max-width: 25px"
-            /></a>
-            <a href="https://www.facebook.com/mrsbethanystanley"
-              ><img
-                src="https://iconarchive.com/download/i91646/icons8/windows-8/Social-Networks-Facebook.ico"
-                style="max-width: 25px"
-            /></a>
-            <a href="https://soundcloud.com/bethanyannemusic"
-              ><img
-                src="https://icons.iconarchive.com/icons/icons8/windows-8/64/Logos-Soundcloud-icon.png"
-                style="max-width: 25px; max-height: 25px"
-            /></a>
-            <a href="https://github.com/bastanley1211"
-              ><img
-                src="https://icons.iconarchive.com/icons/icons8/windows-8/64/Programming-Github-icon.png"
-                style="max-width: 25px"
-            /></a>
-            <a href="https://www.reddit.com/user/covertnerd93"
-              ><img
-                src="https://icons.iconarchive.com/icons/mysitemyway/blue-jeans-social-media/48/reddit-square-icon.png"
-                style="max-width: 30px"
-            /></a>
-          </div>
-          <a href="#top">
-            <h4
-              class="to-top"
-              style="
-                background-color:rgba(33, 21, 18, 0.6);
-                border-radius: 4px;
-                width: 100%;
-                margin: 10px auto;
-              "
-            >
-              Back to Top
-            </h4>
-          </a>
-        </footer>
-        <!--END FOOTER-->
-      </main>
-      <!--END MAIN SITE CONTENT-->
-      <!--JAVASCRIPT SECTION FOR BUTTON-->
-      <script>
-        function subscribe() {
-          let permission = prompt(
-            "Would you like to join our free weekly newsletter for brew tips, great deals, and other Pu'erh inspo? (Write yes or no)"
+        </a>
+      </footer>
+      <!--END FOOTER-->
+    </main>
+    <!--END MAIN SITE CONTENT-->
+    <!--JAVASCRIPT SECTION FOR BUTTON-->
+    <script>
+      function subscribe() {
+        let permission = prompt(
+          "Would you like to join our free weekly newsletter for brew tips, great deals, and other Pu'erh inspo? (Write yes or no)"
+        );
+        if (permission === "yes") {
+          let name = prompt("What is you name?");
+          let email = prompt("What is your email address?");
+          alert(`Thank you ${name} for joining our newsletter!`);
+        } else {
+          alert(
+            `Are you sure you don't want to join? It's free and you can unsubscribe at any time! Try the Learn More button again if you still are interested.`
           );
-          if (permission === "yes") {
-            let name = prompt("What is you name?");
-            let email = prompt("What is your email address?");
-            alert(`Thank you ${name} for joining our newsletter!`);
-          } else {
-            alert(
-              `Are you sure you don't want to join? It's free and you can unsubscribe at any time! Try the Learn More button again if you still are interested.`
-            );
-          }
         }
+      }
 
-        let subscribeButton = document.querySelector(".learnMore");
-        subscribeButton.addEventListener("click", subscribe);
-      </script>
-      <!--END JAVASCRIPT SECTION-->
-    </body>
-  </html>
+      let subscribeButton = document.querySelector(".learnMore");
+      subscribeButton.addEventListener("click", subscribe);
+    </script>
+    <!--END JAVASCRIPT SECTION-->
+  </body>
 </html>
+
